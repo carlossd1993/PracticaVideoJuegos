@@ -1,4 +1,4 @@
-import {Component, NgModule} from '@angular/core';
+import {Component} from '@angular/core';
 import {RouterLink, RouterOutlet} from '@angular/router';
 import {MaterialModuleModule} from "./modules/material-module/material-module.module";
 import {HttpClientModule} from "@angular/common/http";
@@ -14,13 +14,13 @@ import {HttpClientModule} from "@angular/common/http";
 export class AppComponent {
   title = 'PracticaVideoJuegos';
   mostrarMenu=false;
-  pages: string[] =["MMORPG", "Shooter", "MOBA", "Anime", "BattleRoyal", "Strategy", "Fantasy", "SciFi", "CardGames", "Racing",
+  pages: string[] =["MMORPG", "Shooter", "MOBA", "Anime", "Strategy", "Fantasy", "Racing",
     "Fighting", "Social", "Sports"]
   toggleMenu(){
     if(this.mostrarMenu){
       this.mostrarMenu=false;
     }else {
-      this.mostrarMenu=true
+      this.mostrarMenu=true;
     }
     console.log(this.mostrarMenu)
   }
