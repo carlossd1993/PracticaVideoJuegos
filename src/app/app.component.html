@@ -2,20 +2,13 @@
 <mat-drawer-container>
   <mat-drawer mode="side" [(opened)]="mostrarMenu" id="menu">
     <div class="enlace">
-      <a routerLink="#">Inicio</a>
+      <a routerLink="">Inicio</a>
     </div>
-    <div class="enlace">
-      <a routerLink="#">Inicio</a>
-    </div>
-    <div class="enlace">
-      <a routerLink="#">Inicio</a>
-    </div>
-    <div class="enlace">
-      <a routerLink="#">Inicio</a>
-    </div>
-    <div class="enlace">
-      <a routerLink="#">Inicio</a>
-    </div>
+    @for (page of pages; track page){
+      <div class="enlace">
+        <a routerLink={{page.toLowerCase()}}>{{page}}</a>
+      </div>
+    }
 
   </mat-drawer>
   <mat-drawer-content>
