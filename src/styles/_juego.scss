@@ -1,0 +1,25 @@
+#juego{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1%;
+    flex-direction: column;
+  }
+  section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1%;
+    flex-direction: column;
+  }
+  main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
