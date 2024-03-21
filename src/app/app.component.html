@@ -1,6 +1,10 @@
 
 <mat-drawer-container>
   <mat-drawer mode="side" [(opened)]="mostrarMenu" id="menu">
+    <header>
+      <h2>Selecciona un tipo de juego</h2>
+    </header>
+    <main>
     <div class="enlace">
       <a routerLink="">Inicio</a>
     </div>
@@ -9,6 +13,7 @@
         <a routerLink={{page.toLowerCase()}}>{{page}}</a>
       </div>
     }
+    </main>
 
   </mat-drawer>
   <mat-drawer-content>

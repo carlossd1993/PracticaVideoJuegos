@@ -11,6 +11,10 @@ mat-toolbar{
 }
 #menu{
   width: 25%;
+  main{
+    display: flex;
+    flex-direction: column;
+  }
 }
 .mat-drawer-inner-container{
   display: flex;
