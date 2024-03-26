@@ -33,8 +33,6 @@ export const routes: Routes = [
     path:"fantasy",
     component: CategoriasComponent
   },
-
-
   {
     path:"racing",
     component: CategoriasComponent
