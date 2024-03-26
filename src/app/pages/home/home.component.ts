@@ -23,14 +23,13 @@ export class HomeComponent implements OnInit {
   options: any[] = [];
   url:string="";
 
-  constructor(private apiService: ConnexionApiService, private env: EnviromentService) {
+  constructor(private apiService: ConnexionApiService, public env: EnviromentService) {
 
   }
 
   ngOnInit(): void {
     console.log("oninit");
     this.url=this.env.urlApi+"games";
-
     this.apiService.getData(this.url).subscribe(data => {
       this.options = data;
       this.filteredOptions=data;

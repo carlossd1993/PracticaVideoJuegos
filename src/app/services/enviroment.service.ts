@@ -11,6 +11,7 @@ export class EnviromentService {
     'X-RapidAPI-Host': 'free-to-play-games-database.p.rapidapi.com'
   }
 
+  public modoOscuro:boolean=false;
   constructor() {
   }
 }

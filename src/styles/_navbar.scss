@@ -1,20 +1,66 @@
-mat-toolbar{
+//estilos para la navbar
+.navbar{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  &_claro{
+    @extend .navbar;
+    background-color: $color_primario_claro!important;
+  }
+  &_oscuro{
+    @extend .navbar;
+    background-color: $color_primario_oscuro!important;
+  }
   .tituloWeb{
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    a{
+      text-decoration: none;
+      @include fuenteTitulos(3rem);
+      color: $color_secundario_claro;
+    }
   }
 }
-#menu{
-  width: 25%;
-  main{
-    display: flex;
-    flex-direction: column;
+
+//estilos del menú desplegable
+.menu{
+  width: 30vw!important;
+  height: 100% !important;
+  &_claro{
+    @extend .menu;
+    background-color: $color_primario_claro !important;
+    main{
+      display: flex;
+      flex-direction: column;
+      a{
+        margin-top: 1%;
+        @include fuenteTitulos(1.2em);
+        color: $color_secundario_claro;
+        &:hover{
+          color: $color_secundario_oscuro;
+        }
+      }
+    }
   }
+  &_oscuro{
+    @extend .menu;
+    background-color: $color_primario_oscuro !important;
+    main{
+      display: flex;
+      flex-direction: column;
+      a{
+        margin-top: 1%;
+        @include fuenteTitulos(1.2em);
+        color: $color_secundario_oscuro;
+        &:hover{
+          color: $color_secundario_claro;
+        }
+      }
+    }
+  }
+
 }
 .mat-drawer-inner-container{
   display: flex;
